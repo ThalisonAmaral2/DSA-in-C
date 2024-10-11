@@ -1,25 +1,5 @@
 #include <stdio.h>
 
-int printFibo(int size){
-    int f0 = 0;
-    int f1 = 1;
-    printf("%d, ", f0);
-    printf("%d, ", f1);
-
-    if(size > 100){
-        return 0;
-    }
-
-    for(int i = 2; i < size; i++){
-        int a = f0 + f1;
-        printf("%d\n", a);
-
-        f0 = f1;
-        f1 = a;
-    }
-    printf("...\n");
-}
-
 long long int fibo(int n){
     int i;
     long long int fibn, fib1, fib2;
@@ -38,7 +18,6 @@ long long int fibo(int n){
         fib1 = fibn;
     }
 
-
     return fibn;
 }
 
@@ -50,8 +29,5 @@ int main(){
     long long int result = fibo(size);
 
     printf("fib(%d) = %lld\n", size, result);
-
-    // printFibo(size);
-
     return 0;
 }

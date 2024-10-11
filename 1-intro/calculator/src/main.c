@@ -2,17 +2,6 @@
 #include <stdlib.h>
 #include "basics.h"
 
-void clearScreen() {
-    #ifdef _WIN32
-        // For Windows
-        system("cls");
-    #else
-        // For Unix/Linux/Mac
-        system("clear");
-    #endif
-}
-
-
 int main(){
     
     int running = 1;
