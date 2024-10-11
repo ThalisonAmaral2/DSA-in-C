@@ -11,15 +11,12 @@ int main(){
         int operation;
         printf("Escolha o primeiro número: ");
         scanf("%d", &firstNumber);
-        clearScreen();
 
         printf("1-Somar\n2-Subtrair\n3-Multiplicar\n4-Dividir\nEscolha uma operação:");
         scanf("%d", &operation);
-        clearScreen();
 
         printf("%d\nEscolha o segundo número: ", firstNumber);
         scanf("%d", &secondNumber);
-        clearScreen();
 
         int result;
         switch(operation){
