@@ -20,14 +20,3 @@ long long int fibo(int n){
 
     return fibn;
 }
-
-int main(){
-    int size;
-    printf("Escolha o tamanho da sequência que deseja: ");
-    scanf("%d", &size);
-
-    long long int result = fibo(size);
-
-    printf("fib(%d) = %lld\n", size, result);
-    return 0;
-}
